@@ -8,66 +8,78 @@
 
     - Following example is for Ubuntu 16.04
 
-        * `$ sudo apt-get install -y nodejs npm`
+```
+$ sudo apt-get install -y nodejs npm
 
-        * `$ sudo npm cache clean`
+$ sudo npm cache clean
 
-        * `$ sudo npm install n -g`
+$ sudo npm install n -g
 
-        * `$ sudo n list`
+$ sudo n list
+```
 
             * find latest 6.x.x version, for example 6.12.3
 
-        * `$ sudo n 6.12.3`
+```
+$ sudo n 6.12.3
 
-        * `$ sudo apt-get purge nodejs npm`
+$ sudo apt-get purge nodejs npm
 
-        * `$ node -v`
+$ node -v
+```
 
 
 +++
 
 ## Create working folder
 
-- `$ mkdir mychat`
+```
+$ mkdir mychat
 
-- `$ cd mychat`
+$ cd mychat
+```
 
 +++
 
 ## Create package.json
 
-- `$ npm init`
+```
+$ npm init
 
-    - name: test_mychat
+ name: test_mychat
 
-    - version: 1.0.0
+ version: 1.0.0
 
-    - description: 
+ description: 
 
-    - entry point: ** app.js **
+ entry point: app.js
 
-    - test command:
+ test command:
 
-    - git repository: 
+ git repository: 
 
-    - keywords:
+ keywords:
 
-    - author:
+ author:
 
-    - license: 
+ license: 
 
-    - Is this ok?: yes
+ Is this ok?: yes
+```
 
 +++
 
 ## (App.1)Install Express and cfenv
 
-- `$ npm install express`
+```
+$ npm install express
+```
 
     - Express is one of the most major nodejs web framework
 
-- `$ npm install cfenv`
+```
+$ npm install cfenv`
+```
 
     - You can get application environment with cfenv.
 
@@ -99,7 +111,9 @@ console.log( "server starting " + port + " ..." );
 
 ## (App.1)Run and execute initial app.js
 
-- `$ node app`
+```
+$ node app
+```
 
 - Browse http://xx.xx.xx.xx:port/ with web browser, and confirm message.
 
@@ -107,7 +121,9 @@ console.log( "server starting " + port + " ..." );
 
 ## (App.2)Install ejs
 
-- `$ npm install ejs`
+```
+$ npm install ejs
+```
 
     - ejs is template engine for Node.js and Express.
 
@@ -143,7 +159,9 @@ console.log( "server starting " + port + " ..." );
 
 ## (App.2)Create template folder
 
-- `$ mkdir public`
+```
+$ mkdir public
+```
 
 +++
 
@@ -180,7 +198,9 @@ Name: <input type="text" name="name" size="20" value=""/>
 
 ## (App.2)Run and execute initial app.js
 
-- `$ node app`
+```
+$ node app
+```
 
 - Browse http://xx.xx.xx.xx:port/ with web browser, and confirm web page(doesn't work yet).
 
@@ -188,7 +208,9 @@ Name: <input type="text" name="name" size="20" value=""/>
 
 ## (App.3)Install body-parser
 
-- `$ npm install body-parser`
+```
+$ npm install body-parser
+```
 
     - body-parsere handles posted object with Express.
 
@@ -235,7 +257,9 @@ console.log( "server starting " + port + " ..." );
 
 ## (App.3)Run and execute initial app.js
 
-- `$ node app`
+```
+$ node app
+```
 
 - Browse http://xx.xx.xx.xx:port/ with web browser, and confirm web page work as simple web chat.
 
