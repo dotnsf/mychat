@@ -77,7 +77,7 @@
 
 ## (App.1)Code initial app.js
 
-`//. app.js
+```//. app.js
 var express = require( 'express' ), //. Express
     cfenv = require( 'cfenv' ),     //. cfenv
     app = express();
@@ -92,7 +92,7 @@ app.get( '/', function( req, res ){
 var port = appEnv.port || 3000;     //. Find available port dynamically
 app.listen( port );
 console.log( "server starting " + port + " ..." );
-`
+```
 
 +++
 
@@ -114,7 +114,7 @@ console.log( "server starting " + port + " ..." );
 
 ## (App.2)Edit app.js
 
-`//. app.js
+```//. app.js
 var express = require( 'express' ), //. Express
     cfenv = require( 'cfenv' ),     //. cfenv
     fs = require( 'fs' ),           //. fs
@@ -135,7 +135,7 @@ app.get( '/', function( req, res ){
 var port = appEnv.port || 3000;     //. Find available port dynamically
 app.listen( port );
 console.log( "server starting " + port + " ..." );
-`
+```
 
 +++
 
@@ -147,33 +147,31 @@ console.log( "server starting " + port + " ..." );
 
 ## (App.2)Create public/index.ejs
 
-`<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>MyChat</title>
-<script>
+```&lt;DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"/&gt;
+&lt;title&gt;MyChat&lt;title&gt;
+&lt;script&gt;
 setTimeout( "location.reload()", 5000 );
-</script>
-<style type='text/css'>
-</style>
-</head>
-<body>
-<h1>MyChat</h1>
-<hr/>
-<ul>
-<% for( var i = 0; i < messages.length; i ++ ){ %>
- <li><%= messages[i].body %>(<b><%= messages[i].name %></b>)</li>
-<% } %>
-</ul>
-<form method="POST" action="/message">
-Name: <input type="text" name="name" size="20" value=""/>
-<input type="text" name="body" size="80" value=""/>
-<input type="submit" value="Send"/>
-</form>
-</body>
-</html>
-`
+&lt;script&gt;
+&lt;head&gt;
+&lt;body&gt;
+&lt;h1&gt;MyChat&lt;h1&gt;
+&lt;hr/&gt;
+&lt;ul&gt;
+&lt; for( var i = 0; i < messages.length; i ++ ){ %&gt;
+ &lt;li>&lt; messages[i].body %&gt;lt;b&gt; messages[i].name %>&lt;b&gt;lt;li&gt;
+&lt; } %&gt;
+&lt;ul&gt;
+&lt;form method="POST" action="/message"&gt;
+Name: &lt;input type="text" name="name" size="20" value=""/&gt;
+&lt;input type="text" name="body" size="80" value=""/&gt;
+&lt;input type="submit" value="Send"/&gt;
+&lt;form&gt;
+&lt;body&gt;
+&lt;html&gt;
+```
 
 +++
 
@@ -196,7 +194,7 @@ Name: <input type="text" name="name" size="20" value=""/>
 
 ## (App.3)Edit app.js
 
-`//. app.js
+```//. app.js
 var express = require( 'express' ), //. Express
     cfenv = require( 'cfenv' ),     //. cfenv
     fs = require( 'fs' ),           //. fs
@@ -227,7 +225,7 @@ app.post( '/message', function( req, res ){
 var port = appEnv.port || 3000;     //. Find available port dynamically
 app.listen( port );
 console.log( "server starting " + port + " ..." );
-`
+```
 
 +++
 
