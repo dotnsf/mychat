@@ -18,7 +18,7 @@ $ sudo npm install n -g
 $ sudo n list
 ```
 
-            * find latest 6.x.x version, for example 6.12.3
+- find latest 6.x.x version, for example 6.12.3
 
 ```
 $ sudo n 6.12.3
@@ -75,15 +75,15 @@ $ npm init
 $ npm install express
 ```
 
-    - Express is one of the most major nodejs web framework
+- Express is one of the most major nodejs web framework
 
 ```
-$ npm install cfenv`
+$ npm install cfenv
 ```
 
-    - You can get application environment with cfenv.
+- You can get application environment with cfenv.
 
-    - If you want to run this application on IBM Cloud, or Cloud Foundry-based paltform, your application need to decide its working port dynamically using cfenv.
+- If you want to run this application on IBM Cloud, or Cloud Foundry-based paltform, your application need to decide its working port dynamically using cfenv.
 
 +++
 
@@ -125,7 +125,7 @@ $ node app
 $ npm install ejs
 ```
 
-    - ejs is template engine for Node.js and Express.
+- ejs is template engine for Node.js and Express.
 
 +++
 
@@ -212,7 +212,7 @@ $ node app
 $ npm install body-parser
 ```
 
-    - body-parsere handles posted object with Express.
+- body-parser handles posted object with Express.
 
 
 +++
