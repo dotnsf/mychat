@@ -4,7 +4,7 @@
 
 Quite simple Web Chat system using Node.js + Express + EJS( without DB ).
 
-This can be a training application for Node.js.
+This can be a educational application for Node.js newbies.
 
 ## Pre-requisite
 
@@ -20,7 +20,11 @@ This can be a training application for Node.js.
 
 - `$ node app`
 
-- Browse http://**.**.**.**:(port)/ with web browser.
+- Browse http://xx.xx.xx.xx:(port)/ with web browser.
+
+## Educational contents
+
+https://gitpitch.com/dotnsf/mychat
 
 ## License
 
