@@ -14,7 +14,7 @@ This can be a training application for Node.js.
 
 - `$ git clone https://github.com/dotnsf/mychat.git`
 
-- `$ cd mycht`
+- `$ cd mychat`
 
 - `$ npm install`
 
