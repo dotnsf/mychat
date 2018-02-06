@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>MyChat</title>
+<script>
+setTimeout( "location.reload()", 5000 );
+</script>
+<style type='text/css'>
+</style>
+</head>
+<body>
+<h1>MyChat</h1>
+<hr/>
+<ul>
+<% for( var i = 0; i < messages.length; i ++ ){ %>
+ <li><%= messages[i].body %>(<b><%= messages[i].name %></b>)</li>
+<% } %>
+</ul>
+<form method="POST" action="/message">
+Name: <input type="text" name="name" size="20" value=""/>
+<input type="text" name="body" size="80" value=""/>
+<input type="submit" value="Send"/>
+</form>
+</body>
+</html>
+
