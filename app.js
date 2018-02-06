@@ -11,7 +11,6 @@ var messages = [];
 
 app.use( bodyParser.urlencoded( { extended: true } ) );
 app.use( bodyParser.json() );
-app.use( express.static( __dirname + '/public' ) );
 
 app.get( '/', function( req, res ){
   var template = fs.readFileSync( __dirname + '/public/index.ejs', 'utf-8' );
